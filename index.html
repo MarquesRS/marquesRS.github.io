@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style-reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+
+    <script src="scripts.js"></script>
+
+    <!-- EMAIL -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("4defkbxSGY-74NYL_");
+        })();
+    </script>
+
+
+    <title>Portfólio - Pablo Marques</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul id="navbar-icons-id" class="navbar__icons-container hide">
+            <li>
+                <a class="navbar__icons" title="Inicio" href="#header-id">
+                    <i class="fa-solid fa-house"></i>
+                    <p>HOME</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar__icons" title="Sobre" href="#about-id">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <p>SOBRE</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar__icons" title="Portfólio" href="#portfolio-id">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>PORTFÓLIO</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar__icons" title="Habilidades" href="#skills-id">
+                    <i class="fa-solid fa-brain"></i>
+                    <p>HABILIDADES</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar__icons" title="Experiência" href="#experience-id">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <p>EXPERIÊNCIA</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar__icons" title="Educação" href="#education-id">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <p>GRADUAÇÃO</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar__icons" title="Contato" href="#contact-id">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>CONTATO</p>
+                </a>
+            </li>
+        </ul>
+        <div class="navbar__menu-container">
+            <a id="navbar-menu-id" class="navbar__menu" title="Menu">
+                <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+            </a>
+        </div>
+    </nav>
+    <figure class="header__image --position-absolute">
+        <img src="../img/home.jpg" alt="Imagem do autor do site 1" />
+    </figure>
+    <main class="header" id="header-id">
+        <figure class="header__image">
+          <img src="../img/home.jpg" alt="Imagem do autor do site 1" />
+        </figure>
+        <div class="header-container">
+          <div class="header-container__text-container">
+            <div class="text-container__text">
+              <p>OLÁ!</p>
+              <h1>EU SOU <span class="bold">PABLO MARQUES</span></h1>
+              <p>
+                Eu sou um desenvolvedor fullstack e Web Designer brasileiro. Meu foco está na criacão de interfaces resposivas e amigáveis. Sou apaixonado pela construcão de excelentes softwares que melhoram a vida daqueles ao meu redor.
+              </p>
+            </div>
+            <button class="button-container">
+              <a href="#about-id">MAIS</a>
+            </button>
+          </div>
+        </div>
+    </main>
+    <section class="section" id="about-id">
+        <div class="section-container">
+            <h2 class="section-title">| SOBRE</h2>
+            <div class="about-container">
+                <div class="about-container__information-container">
+                    <dl class="information-container__text">
+                        <dd class="text_about-element">
+                            NOME<br/>PABLO MARQUES
+                        </dd>
+                        <dd class="text_about-element">
+                            IDADE<br/>22 anos
+                        </dd>
+                        <dd class="text_about-element">
+                            PROFISSÃO<br/>FULLSTACK
+                        </dd>
+                        <dd class="text_about-element">
+                            NATURALIDADE<br/>ITAJAÍ/SC
+                        </dd>
+                        <dd class="text_about-element">
+                            NACIONALIDADE<br/>BRASILEIRO
+                        </dd>
+                        <dd class="text_about-element">
+                            GITHUB<br/>MARQUESRS
+                        </dd>
+                    </dl>
+                    <button class="button-container">
+                        <a>CURRÍCULO</a>
+                    </button>
+                </div>
+                <figure class="about-container__image">
+                    <img src="../img/sobre.jpg" alt="Imagem do author do site 2." />
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="portfolio-id">
+        <div class="section-container">
+            <h2 class="section-title">| PORTFÓLIO</h2>
+            <div class="portfolio-container">
+                <ul class="portfolio-container__icons-container">
+                    <li class="icons-container__code-icon">
+                        <a class="code-icon-container" title="Websites">
+                            <i class="fa-solid fa-code"></i>
+                            <p class="code-icon-container__text">WEBSITES</p>
+                        </a>
+                    </li>
+                    <li id="figma-icon-id" class="icons-container__icon">
+                        <a title="Figma">
+                            <i class="fa-solid fa-palette"></i>    
+                        </a>
+                    </li>
+                    <li class="icons-container__icon">
+                        <a id="galeria-icon-id" title="Galeria">
+                            <i class="fa-solid fa-camera"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Portifólio Figma -->
+                <ul id="portfolio-figma-id" class="portfolio-container__images-container portfolio--show">
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto1.png">
+                            <img class="portfolio-projects__image" src="../img/projeto1.png" alt="imagem do projeto 1" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto2.png">
+                            <img class="portfolio-projects__image" src="../img/projeto2.png" alt="imagem do projeto 2" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto3.png">
+                            <img class="portfolio-projects__image" src="../img/projeto3.png" alt="imagem do projeto 3" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto4.png">
+                            <img class="portfolio-projects__image" src="../img/projeto4.png" alt="imagem do projeto 4" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto5.png">
+                            <img class="portfolio-projects__image" src="../img/projeto5.png" alt="imagem do projeto 5" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto6.png">
+                            <img class="portfolio-projects__image" src="../img/projeto6.png" alt="imagem do projeto 6" />
+                        </a>
+                    </li>
+                </ul>
+                <!-- Portifólio Galeria -->
+                <ul id="portifolio-galeria-id" class="portfolio-container__images-container">
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto6.png">
+                            <img class="portfolio-projects__image" src="../img/projeto6.png" alt="imagem do projeto 1" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto5.png">
+                            <img class="portfolio-projects__image" src="../img/projeto5.png" alt="imagem do projeto 2" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto4.png">
+                            <img class="portfolio-projects__image" src="../img/projeto4.png" alt="imagem do projeto 3" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto3.png">
+                            <img class="portfolio-projects__image" src="../img/projeto3.png" alt="imagem do projeto 4" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto2.png">
+                            <img class="portfolio-projects__image" src="../img/projeto2.png" alt="imagem do projeto 5" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/img/projeto1.png">
+                            <img class="portfolio-projects__image" src="../img/projeto1.png" alt="imagem do projeto 6" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio-container__button">
+                <button class="button-container button--large">
+                    <a>CARREGAR MAIS</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="skills-id">
+        <div class="section-container small-margin">
+            <h2 class="section-title">| SKILLS</h2>
+            <ol class="skills-container"> 
+                <li class="skills-container__skills">
+                    <h3>HTML</h3>
+                    <img class="skills-image" src="./img/skills/html.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>CSS</h3>
+                    <img class="skills-image" src="./img/skills/css.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>C#</h3>
+                    <img class="skills-image" src="./img/skills/csharp.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>JavaScript</h3>
+                    <img class="skills-image" src="./img/skills/javascript.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>.Net Core</h3>
+                    <img class="skills-image" src="./img/skills/netcore.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>TypeScript</h3>
+                    <img class="skills-image" src="./img/skills/ts.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>React</h3>
+                    <img class="skills-image" src="./img/skills/react.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>VS Code</h3>
+                    <img class="skills-image" src="./img/skills/vscode.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>GIT</h3>
+                    <img class="skills-image" src="./img/skills/git.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>PostgreSQL</h3>
+                    <img class="skills-image" src="./img/skills/postgresql.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>Webpack</h3>
+                    <img class="skills-image" src="./img/skills/webpack.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>Nginx</h3>
+                    <img class="skills-image" src="./img/skills/nginx.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>Ubunto</h3>
+                    <img class="skills-image" src="./img/skills/ubuntu.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>AWS</h3>
+                    <img class="skills-image" src="./img/skills/aws.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>Photoshop</h3>
+                    <img class="skills-image" src="./img/skills/photoshop.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+                <li class="skills-container__skills">
+                    <h3>Figma</h3>
+                    <img class="skills-image" src="./img/skills/figma.png" />
+                    <ol class="skills-stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="section" id="experience-id">
+        <div class="section-container">
+            <h2 class="section-title">| EXPERIÊNCIA</h2>
+            <div class="experience-container">
+                <div class="experience-container__information-container">
+                    <ol class="information-container__text-container">
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2021 - Trabalhando</p>
+                            </div>
+                            <h3 class="text-item__title">GOOGLE</h3>
+                            <p class="text-item__text">Estágio na Google atuando na equipe de desenvolvimento de ferramentas para o ADS.</p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2018 - 2021</p>
+                            </div>
+                            <h3 class="text-item__title">BOOKING</h3>
+                            <p class="text-item__text">Cargo de desenvolvedor junior na equipe de desenvolvimento backend.</p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2014 - 2018</p>
+                            </div>
+                            <h3 class="text-item__title">FACEBOOK</h3>
+                            <p class="text-item__text">Cargo de desenvolvedor pleno na equipe de criação da biblioteca React.</p>
+                        </li>
+                        <li class="text-container__text-item  extra-experience --hide ">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2012 - 2014</p>
+                            </div>
+                            <h3 class="text-item__title">TWITTER</h3>
+                            <p class="text-item__text">Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.</p>
+                        </li>
+                        <li class="text-container__text-item extra-experience --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2011 - 2012</p>
+                            </div>
+                            <h3 class="text-item__title">MICROSOFT</h3>
+                            <p class="text-item__text">Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.</p>
+                        </li>
+                        <li class="text-container__text-item extra-experience  --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2010 - 2011</p>
+                            </div>
+                            <h3 class="text-item__title">IBM</h3>
+                            <p class="text-item__text">Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.</p>
+                        </li>
+                    </ol>
+                    <button id="load-more-experience" class="button-container">
+                        <a>MAIS</a>
+                    </button>
+                </div>
+                <div class="experience-container__blocks-container-pai">
+                    <div class="blocks-container-pai__blocks-container-filho">
+                        <div class="blocks-container__block-item">
+                            <h4 class="block-item_title">9</h4>
+                            <p class="block-item_text">ANOS DE EXPERIÊNCIA</p>
+                        </div>
+                        <div class="blocks-container__block-item">
+                            <h4 class="block-item_title">16</h4>
+                            <p class="block-item_text">PROJETOS INDIVIDUAIS</p>
+                        </div>
+                        <div class="blocks-container__block-item">
+                            <h4 class="block-item_title">72</h4>
+                            <p class="block-item_text">PROJETOS EM EQUIPE</p>
+                        </div>
+                        <div class="blocks-container__block-item">
+                            <h4 class="block-item_title">87</h4>
+                            <p class="block-item_text">CURSOS DE EXPECIALIZAÇÃO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section"  id="education-id">
+        <section class="section-container">
+            <h2 class="section-title">| EDUCAÇÃO</h2>
+            <div class="education-container">
+                <div class="education-container__information-container">
+                    <div class="information-container__title">
+                        <h3>BACHARELADO E PÓS-GRADUAÇÃO</h3>
+                    </div>
+                    <ol>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2023 - ANDAMENTO</p>
+                            </div>
+                            <h4 class="text-item__title">CIÊNCIA DA COMPUTACÃO</h4>
+                            <p class="text-item__text">Bracharelado em Ciência da Computação pela UNIVALI</p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2021 - 2022</p>
+                            </div>
+                            <h4 class="text-item__title">BIG DATA</h4>
+                            <p class="text-item__text">
+                                Pós graduacão em Big Data pela Federal de Santa Catarina (UFSC)
+                            </p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2019 - 2020</p>
+                            </div>
+                            <h4 class="text-item__title">COMPUTACÃO APLICADA</h4>
+                            <p class="text-item__text">
+                                Mestrado em Computacão aplicada pela Federal de São Paulo (UFSP)
+                            </p>
+                        </li>
+
+                        <li class="text-container__text-item extra-education --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2012 - 2013</p>
+                            </div>
+                            <h4 class="text-item__title">Curso 1</h4>
+                            <p class="text-item__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed. 
+                            </p>
+                        </li>
+                        <li class="text-container__text-item extra-education --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2011 - 2012</p>
+                            </div>
+                            <h4 class="text-item__title">Curso 2</h4>
+                            <p class="text-item__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed. 
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="education-container__information-container">
+                    <div class="information-container__title">
+                        <h3>CURSO DE ESPECIALIZAÇÃO</h3>
+                    </div>
+                    <ol>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2023 - ANDAMENTO</p>
+                            </div>
+                            <h4 class="text-item__title">FRONTEND</h4>
+                            <p class="text-item__text">
+                                Curso ministrado por Jackson Camara com 200 horas totais
+                                concluídas.
+                            </p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2021 - 2022</p>
+                            </div>
+                            <h4 class="text-item__title">BACKEND</h4>
+                            <p class="text-item__text">
+                                Curso ministrado por Jackson Camara com 200 horas totais
+                                concluídas.
+                            </p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2019 - 2020</p>
+                            </div>
+                            <h4 class="text-item__title">FULLSTACK</h4>
+                            <p class="text-item__text">
+                                Curso ministrado por Jackson Camara com 100 horas totais
+                                concluídas.
+                            </p>
+                        </li>
+
+                        <li class="text-container__text-item extra-education --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2012 - 2013</p>
+                            </div>
+                            <h4 class="text-item__title">Curso 1</h4>
+                            <p class="text-item__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed. 
+                            </p>
+                        </li>
+                        <li class="text-container__text-item extra-education --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2011 - 2012</p>
+                            </div>
+                            <h4 class="text-item__title">Curso 2</h4>
+                            <p class="text-item__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed. 
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="education-container__information-container">
+                    <div class="information-container__title">
+                        <h3>CURSO DE ESPECIALIZAÇÃO</h3>
+                    </div>
+                    <ol>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2023 - ANDAMENTO</p>
+                            </div>
+                            <h4 class="text-item__title">INGLES</h4>
+                            <p class="text-item__text">
+                                Curso de Inglês na UNIVALI
+                                Idiomas. Níveis a1, a2, b1
+                            </p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2021 - 2022</p>
+                            </div>
+                            <h4 class="text-item__title">INGLES</h4>
+                            <p class="text-item__text">
+                                Curso de Inglês na escola de ideiomas Wizard para os Níveis b2, c1, c2
+                            </p>
+                        </li>
+                        <li class="text-container__text-item">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2019 - 2020</p>
+                            </div>
+                            <h4 class="text-item__title">INGLES</h4>
+                            <p class="text-item__text">Curso de Inglês particular pelo ambiente Italki de Nível c2</p>
+                        </li>
+
+                        <li class="text-container__text-item extra-education --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2012 - 2013</p>
+                            </div>
+                            <h4 class="text-item__title">Curso 1</h4>
+                            <p class="text-item__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed. 
+                            </p>
+                        </li>
+                        <li class="text-container__text-item extra-education --hide">
+                            <div class="text-item__icon-container">
+                                <i class="fa-solid fa-calendar-days text-item__icon"></i>
+                                <p>2011 - 2012</p>
+                            </div>
+                            <h4 class="text-item__title">Curso 2</h4>
+                            <p class="text-item__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed. 
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="education-container__button">
+                <button class="button-container button--large">
+                    <a id="load-more-education">MOSTRAR MAIS</a>
+                </button>
+            </div>
+        </section>
+    </section>
+    <footer class="section" id="contact-id">
+        <div class="section-container">
+            <h2 class="section-title">| CONTATO</h2>
+            <div class="contact-container">
+                <div class="section-contato-container__information-container">
+                    <a href="mailto:marquesbr@protonmail.ch">
+                        <div class="information-container__item-container">
+                            <div class="item-container__icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="item-container__text">
+                                <p>EMAIL</p>
+                                <p>marquesbr@protonmail.ch</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a  href="tel:+55997984474" >
+                        <div class="information-container__item-container">
+                            <div class="item-container__icon">
+                                <i class="fa-solid fa-phone fa-flip-horizontal"></i>
+                            </div>
+                            <div class="item-container__text">
+                                <p>TELEFONE</p>
+                                <p>+55 51 99798-4474</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/51997984474">
+                        <div class="information-container__item-container">
+                            <div class="item-container__icon">
+                                 <i class="fa-brands fa-whatsapp"></i>    
+                            </div>
+                            <div class="item-container__text">
+                                <p>WHATSAPP</p>
+                                <p>+55 51 99798-4474</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/seunomeusuario">
+                        <div class="information-container__item-container">
+                            <div class="item-container__icon">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <div class="item-container__text">
+                                <p>TELEGRAM</p>
+                                <p>+55 51 99798-4474</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://discordapp.com/users/marquesRS">
+                        <div class="information-container__item-container">
+                            <div class="item-container__icon">
+                                <i class="fa-brands fa-discord"></i>
+                            </div>
+                            <div class="item-container__text">
+                                <p>DISCORD</p>
+                                <p>MarquesRS</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <form id="form-id" class="section-contato-container__form-container" action="https://formsubmit.co/marquesbr@protonmail.ch" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html?source=form">
+                    <div class="form-container__input-container">
+                        <input type="text" id="form-name" name="name" placeholder="NOME" required />
+                    </div>
+                    <div class="form-container__input-container">
+                        <input type="email" id="form-email" name="email" placeholder="EMAIL" required />
+                    </div>
+                    <div class="form-container__input-container">
+                        <input type="text" id="form-phone" name="phone" placeholder="TELEFONE" required />
+                    </div>
+                    <div class="form-container__input-container">
+                        <input type="text" id="form-subject" name="subject" placeholder="ASSUNTO" required />
+                    </div>
+                    <div class="form-container__input-container">
+                        <textarea id="form-message" name="message" placeholder="MENSAGEM" required></textarea>
+                    </div>
+                    <div class="button-container__button">
+                        <button type="submit" class="button-container" onclick="sendEmail()">
+                            ENVIAR                    
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="section-contato__buttons-container">
+                <div class="button-container__midias-container">
+                    <a class="midias-container__item"  href="https://br.linkedin.com/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="midias-container__item"  href="https://twitter.com/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="midias-container__item" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="midias-container__item" href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="midias-container__item" href="https://pt-br.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="email-sent-id" class="email-sent">
+                <p>Mensagem enviada</p>            
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

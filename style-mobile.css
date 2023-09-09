@@ -1,0 +1,128 @@
+@media (max-width: 390px) {
+    .section-title {
+        font-size: 2.5em;
+    }
+
+    .email-sent {
+        width: 40vw;
+    }
+
+    /* HEADER */
+
+    .header {
+        border: none;
+    }
+
+    .header-container {
+        margin-top: 10vw;
+        box-sizing: border-box;
+        padding-right: 15vw;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .header-container__text-container {
+        margin-top: 10vh;
+    }
+
+    .navbar__icons {
+        visibility: hidden;
+    }
+
+    .button-container {
+        width: 60vw;
+    }
+
+
+    /* ABOUT */
+
+    .about-container__image {
+        display: none;
+    }
+
+    .about-container__information-container {
+        width: 80%;
+    }
+
+    /* PORTFÓLIO */
+
+    .portfolio-projects__image {
+        width: 80vw
+    }
+
+    /* SKILLS */
+
+    .skills-image {
+        width: 20vw;
+    }
+
+    .skills-stars {
+        font-size: 0.6em;
+    }
+    
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3vw;
+        row-gap: 15vw;
+    }
+
+    /* EXPERIENCIA */
+
+    .experience-container__information-container {
+        width: 100%;
+    }
+
+    .experience-container__blocks-container-pai {
+        display: none;
+    }
+
+    /* EDUCATION */
+
+    .education-container {
+        flex-direction: column;
+    }
+
+    .education-container__information-container {
+        width: 100%;
+    }
+
+    .information-container__title {
+        margin-bottom: 6vh;
+    }
+
+    /* CONTACT */
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .information-container__item-container {
+        width: 100vw;
+    }
+
+    .item-container__icon {
+        width: 13vw;
+        border-radius: 1.5vw;
+    }
+
+    .section-contato-container__form-container {
+        width: 100%;
+    }
+
+    .section-contato__buttons-container {
+        bottom: -5vh;
+        width: 100%;
+    }
+
+    .button-container__midias-container {
+        width: 100%;
+    }
+    
+
+    .midias-container__item {
+        width: 50%;
+    }
+}
